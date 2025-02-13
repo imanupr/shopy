@@ -1,0 +1,7 @@
+.register
+{
+    
+    background-image: url('../../register.jpeg'); /* Background image */
+    background-size: cover; /* Make the image cover the whole page */
+    background-position: center center; /* Center the background image */
+}

@@ -1,0 +1,85 @@
+/* Home.css */
+
+body {
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    background-color: #fffcfcda; /* White background for the container to make content stand out */
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Rounded corners for the cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    background-color: #fff; /* White background for the cards */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      margin-bottom: 20px; /* Space out the cards in smaller screens */
+    }
+  }
+  
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .col-md-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  

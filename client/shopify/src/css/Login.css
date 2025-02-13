@@ -1,0 +1,120 @@
+/* Base styles for the login page */
+.loginpage {
+    background-image: url('../../login.jpeg'); /* Background image */
+    background-size: cover; /* Make the image cover the whole page */
+    background-position: center center; /* Center the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
+    padding: 20px; /* Padding around the content */
+    overflow: hidden; /* Prevents scroll bars when animating */
+    position: relative; /* For positioning overlay or elements */
+}
+
+/* Header styling */
+.loginpage h1 {
+    font-size: 36px; /* Large heading */
+    color: #4d4d4d; /* Dark gray text for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation for header */
+}
+
+/* Paragraph styling */
+.loginpage p {
+    font-size: 18px; /* Slightly larger text for paragraph */
+    color: #333; /* Darker text color for readability */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 30px; /* Space below paragraph */
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in animation with delay */
+    animation-delay: 0.5s; /* Delay the animation */
+}
+
+/* Login container (form) */
+.loginpage .login-container {
+    background-color: white; /* White background for the login form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+    padding: 30px; /* Padding inside the form container */
+    width: 100%; /* Full width inside the container */
+    max-width: 400px; /* Limit the form container width */
+    margin: 0 auto; /* Center it horizontally */
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateX(-100%); /* Start position off-screen to the left */
+    animation: slideIn 1s ease-in-out forwards; /* Slide-in animation */
+    animation-delay: 1s; /* Delay the form's animation */
+}
+
+/* Input field styling */
+.loginpage .login-container input {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Padding inside the input fields */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ddd; /* Light border around the input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 16px; /* Larger font for readability */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.loginpage .login-container input:focus {
+    border-color: #4dff88; /* Green border when focused */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Submit button styling */
+.loginpage .login-container input[type="submit"] {
+    background-color: #4dff88; /* Light green button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove the default border */
+    font-size: 18px; /* Larger button text */
+    padding: 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.loginpage .login-container input[type="submit"]:hover {
+    background-color: #33cc66; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Forgot password link styling */
+.loginpage .forgot-password {
+    margin-top: 15px; /* Space above the "Forgot Password" link */
+    text-align: center; /* Center the link */
+}
+
+.loginpage .forgot-password a {
+    color: #4d4d4d; /* Dark gray color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 14px; /* Smaller text for the link */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.loginpage .forgot-password a:hover {
+    color: #33cc66; /* Change color when hovering */
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

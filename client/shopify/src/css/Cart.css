@@ -1,0 +1,168 @@
+/* Cart Page */
+.cartpage {
+    background-image: url('../../toy-shopping-cart-with-boxes-credit-card-with-copy-space_339191-197.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Cart Page Heading */
+.cartpage h1 {
+    font-size: 36px;
+    color: #663399;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.3s; /* Slight delay for smoother flow */
+}
+
+/* Paragraph Styling */
+.cartpage p {
+    font-size: 18px;
+    color: #d41717;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 0.7s; /* Adjusted delay for smoother appearance */
+}
+
+/* Cart Container */
+.cartpage .cart-container {
+    background-color: #d62828;
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Increased shadow for more depth */
+    padding: 25px;
+    width: 90%; /* Increased width for larger view on bigger screens */
+    max-width: 850px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* Cart Item List */
+.cartpage .cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Cart Item */
+.cartpage .cart-items li {
+    background-color: #e12626;
+    border-bottom: 1px solid #ddd;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInItem 0.6s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.cartpage .cart-items li:last-child {
+    border-bottom: none;
+}
+
+/* Button Styling */
+.cartpage button {
+    background-color: #663399;
+    color: #d81b1b;
+    padding: 12px 24px; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    width: auto;
+    max-width: 250px; /* Set a max-width for buttons */
+    margin-top: 20px;
+}
+
+.cartpage button:hover {
+    background-color: #8a4be1;
+    transform: scale(1.05);
+}
+
+.cartpage button:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 10px rgba(102, 51, 153, 0.8); /* Adds a subtle focus shadow */
+}
+
+/* Total Price Styling */
+.cartpage .total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #663399;
+    margin-top: 20px;
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInItem {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cartpage {
+        padding: 15px;
+    }
+
+    .cartpage .cart-container {
+        width: 100%;
+    }
+
+    .cartpage .cart-items li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cartpage .total {
+        font-size: 18px;
+    }
+
+    .cartpage button {
+        width: 100%;
+    }
+}

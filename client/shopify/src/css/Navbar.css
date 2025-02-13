@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+.navdesign {
+    background-color: #343a40; /* Dark background for the navbar */
+    background-image: url('../../toy-shopping-cart-with-boxes-credit-card-with-copy-space_339191-197.avif');
+    padding: 10px 20px; /* Adjust the padding to give some breathing room */
+  }
+  
+  .navdesign .navbar-brand {
+    color: #3f3d35 !important; /* Gold color for the brand */
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .navdesign .navbar-nav .nav-link {
+    color: #484640 !important; /* Gold color for navigation links */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .navdesign .navbar-nav .nav-link:hover {
+    color: #2d2c27 !important; /* Lighter gold on hover */
+  }
+  
+  .navdesign .navbar-nav .nav-link.active {
+    color: #373530 !important; /* Darker gold for active link */
+  }
+  
+  .navdesign .badge {
+    background-color: #dc3545; /* Red badge color for cart count */
+    font-size: 0.9rem;
+  }
+  
+  .navdesign .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .navdesign .nav-item {
+    margin-left: 10px;
+  }
+  
+  .navdesign .nav-link a {
+    color: #31302a;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .navdesign .nav-link a:hover {
+    color: #2e2d30; /* Change on hover */
+  }
+  
+  .navdesign .nav-link.active, .navdesign .nav-link:focus {
+    color: #ffd700 !important;
+  }
+  
+  .navdesign span {
+    font-size: 1.1rem;
+    color: #3e3c32;
+    margin-right: 15px;
+  }
+  
+  .navdesign a {
+    color: #2e2c23;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+  
+  .navdesign a:hover {
+    color: #262419;
+  }
+  
